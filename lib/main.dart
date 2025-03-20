@@ -73,7 +73,7 @@ class HomePage extends StatelessWidget {
 class ProfilePage extends StatelessWidget {
   final bool isPushed;
 
-  ProfilePage({this.isPushed = false});
+  const ProfilePage({super.key, this.isPushed = false});
 
   @override
   Widget build(BuildContext context) {
@@ -100,7 +100,7 @@ class ProfilePage extends StatelessWidget {
 class SettingsPage extends StatelessWidget {
   final bool isPushed;
 
-  SettingsPage({this.isPushed = false});
+  const SettingsPage({super.key, this.isPushed = false});
 
   @override
   Widget build(BuildContext context) {
@@ -123,3 +123,4 @@ class SettingsPage extends StatelessWidget {
     );
   }
 }
+
